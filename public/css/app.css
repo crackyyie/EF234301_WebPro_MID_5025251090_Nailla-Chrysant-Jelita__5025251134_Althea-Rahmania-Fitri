@@ -1,0 +1,21 @@
+:root{--bg:#ecece7;--ink:#111;--card:#fff;--acc:#c0693c}
+[data-bs-theme=dark]{--bg:#101010;--ink:#f2f2ee;--card:#1c1c1c}
+body{background:var(--bg);color:var(--ink);font-family:Manrope,sans-serif;transition:background .3s,color .3s}
+h1,h2,h3,h4,h5,h6,.brand{font-family:'League Spartan',sans-serif;font-weight:700;letter-spacing:-.02em}
+.brand{color:var(--ink);text-decoration:none;font-weight:800}
+.nav-link{color:var(--ink);border-radius:50rem;padding:.4rem 1rem!important}.nav-link:hover,.nav-link.active{background:var(--ink);color:var(--bg)}
+.btn{border-radius:50rem;font-weight:600}
+.btn-primary,.btn-ink{--bs-btn-bg:var(--ink);--bs-btn-border-color:var(--ink);--bs-btn-color:var(--bg);--bs-btn-hover-bg:var(--acc);--bs-btn-hover-border-color:var(--acc);--bs-btn-hover-color:#fff;--bs-btn-active-bg:var(--acc);--bs-btn-active-color:#fff}
+.btn-soft{background:color-mix(in srgb,var(--ink) 10%,transparent);color:var(--ink)}.btn-soft:hover{background:var(--acc);color:#fff}
+.card,.table,.fcard{--bs-card-bg:var(--card);--bs-table-bg:var(--card);--bs-table-color:var(--ink)}
+.bg-white{background:var(--card)!important}
+.card,.fcard{border:0;border-radius:1.25rem;box-shadow:0 4px 20px rgba(0,0,0,.07)}.fcard{background:var(--card)}
+.form-control,.form-select{border-radius:.9rem}
+a{color:var(--acc)}
+.lift{transition:transform .25s}.lift:hover{transform:translateY(-5px)}
+.fade-up{animation:fu .5s ease both}@keyframes fu{from{opacity:0;transform:translateY(14px)}}
+.hero-title{font-size:clamp(3.4rem,14vw,11rem);line-height:.95;font-weight:800;letter-spacing:-.04em}
+.dot{width:36px;height:36px;border-radius:50%;border:3px solid transparent;cursor:pointer;transition:transform .2s}.dot:hover{transform:scale(1.15)}.dot.on{border-color:var(--ink)}
+.track{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:6px 2px}.track::-webkit-scrollbar{display:none}
+.fcard{flex:0 0 220px;scroll-snap-align:start;padding:1.25rem;min-height:220px}
+.bar{height:3px;width:150px;background:color-mix(in srgb,var(--ink) 15%,transparent)}.bar i{display:block;height:100%;width:20%;background:var(--ink);transition:width .3s}
